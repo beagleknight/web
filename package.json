@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-task-listing": "^1.0.1"
+  }
+}
