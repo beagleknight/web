@@ -32,3 +32,16 @@ ul.progress-bar {
     }
   }
 }
+
+.portfolio {
+  .row.uniform {
+    margin-bottom: 20px;
+    .game {
+      border: 0;
+      .title {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

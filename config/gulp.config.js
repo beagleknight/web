@@ -1,10 +1,12 @@
 var sourceFolder = 'src',
-    destFolder   = 'public';
+    destFolder   = 'public',
+    modulesFolder = 'node_modules';
 
 module.exports = {
     folders: {
         source: sourceFolder,
-        dest: destFolder
+        dest: destFolder,
+        modules: modulesFolder
     },
     files: {
         templates: `${sourceFolder}/templates/**/*.html`,
@@ -17,17 +19,20 @@ module.exports = {
                 `${sourceFolder}/styles/index.scss`
             ]
         },
-        images: `${sourceFolder}/images/**.*`,
+        images: `${sourceFolder}/images/**/*.*`,
         scripts: {
             libs: [
                 `${sourceFolder}/scripts/jquery.min.js`,
                 `${sourceFolder}/scripts/jquery.scrollzer.min.js`,
                 `${sourceFolder}/scripts/jquery.scrolly.min.js`,
+                `${modulesFolder}/angular/angular.min.js`,
+                `${modulesFolder}/angular-ui-router/release/angular-ui-router.min.js`,
                 `${sourceFolder}/scripts/skel.min.js`,
                 `${sourceFolder}/scripts/util.js`
             ],
             main: [
-                `${sourceFolder}/scripts/index.js`
+                `${sourceFolder}/scripts/index.js`,
+                `${sourceFolder}/scripts/custom.js`
             ]
         },
         fonts: `${sourceFolder}/fonts/**.*`
