@@ -12,7 +12,10 @@ module.exports = {
             libs: [
                 `${sourceFolder}/styles/font-awesome.min.css`
             ],
-            main: `${sourceFolder}/styles/index.scss`
+            main: [
+                `${sourceFolder}/styles/custom.scss`,
+                `${sourceFolder}/styles/index.scss`
+            ]
         },
         images: `${sourceFolder}/images/**.*`,
         scripts: {
@@ -30,6 +33,7 @@ module.exports = {
         fonts: `${sourceFolder}/fonts/**.*`
     },
     styles: {
+        mainFile: `${sourceFolder}/styles/index.scss`,
         destFolder: `${destFolder}/css`
     },
     images: {

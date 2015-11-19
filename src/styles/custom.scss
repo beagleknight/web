@@ -1,0 +1,34 @@
+.features.career {
+  article {
+    .image {
+      vertical-align: top;
+      width: 30%
+    }
+    .inner {
+      width: 68%
+    }
+  }
+}
+
+ul.feature-icons.skills {
+  li.skill.unity3d {
+    background: url(/images/unity-icon.png) top left no-repeat;
+    background-size: 15%
+  }
+}
+
+ul.progress-bar {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    border: 1px solid #ddd;
+    height: 20px;
+    &.fill {
+      background: #9f9;
+    }
+  }
+}

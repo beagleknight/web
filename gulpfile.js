@@ -18,7 +18,7 @@ gulp.task('styles:libs', function () {
 });
 
 gulp.task('styles:main', function () {
-    gulp.src(config.files.styles.main)
+    gulp.src(config.styles.mainFile)
         .pipe($.plumber())
         .pipe($.sass())
         .pipe($.if(env === 'production', $.minifyCss()))
