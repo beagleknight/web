@@ -15,6 +15,7 @@ module.exports = {
                 `${sourceFolder}/styles/font-awesome.min.css`
             ],
             main: [
+                `${sourceFolder}/styles/libs/**/*.scss`,
                 `${sourceFolder}/styles/custom.scss`,
                 `${sourceFolder}/styles/index.scss`
             ]

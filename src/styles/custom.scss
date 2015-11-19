@@ -1,3 +1,7 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+
 .features.career {
   article {
     .image {
@@ -25,10 +29,10 @@ ul.progress-bar {
     margin: 0;
     padding: 0;
     width: 15%;
-    border: 1px solid #ddd;
-    height: 20px;
+    border: 1px solid _palette(fg-bold);
+    height: 12px;
     &.fill {
-      background: #9f9;
+      background: _palette(accent1, fg-dark);
     }
   }
 }
