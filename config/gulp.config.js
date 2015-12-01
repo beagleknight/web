@@ -1,6 +1,7 @@
 var sourceFolder = 'src',
     destFolder   = 'public',
-    modulesFolder = 'node_modules';
+    modulesFolder = 'node_modules',
+    configFolder = 'config';
 
 module.exports = {
     folders: {
@@ -36,7 +37,8 @@ module.exports = {
                 `${sourceFolder}/scripts/custom.js`
             ]
         },
-        fonts: `${sourceFolder}/fonts/**.*`
+        fonts: `${sourceFolder}/fonts/**.*`,
+        cname: `${configFolder}/CNAME`
     },
     styles: {
         mainFile: `${sourceFolder}/styles/index.scss`,

@@ -58,7 +58,14 @@ gulp.task('fonts', function () {
         .pipe($.connect.reload());
 });
 
-gulp.task('build', ['templates', 'styles:libs', 'styles:main', 'images', 'scripts:libs', 'scripts:main', 'fonts']);
+gulp.task('cname', function () {
+    gulp.src(config.files.cname)
+        .pipe($.plumber())
+        .pipe(gulp.dest(config.folders.dest))
+        .pipe($.connect.reload());
+});
+
+gulp.task('build', ['templates', 'styles:libs', 'styles:main', 'images', 'scripts:libs', 'scripts:main', 'fonts', 'cname']);
 
 gulp.task('watch', ['build'], function () {
     gulp.watch(config.files.templates, ['templates']);
@@ -68,10 +75,16 @@ gulp.task('watch', ['build'], function () {
     gulp.watch(config.files.scripts.libs, ['scripts:libs']);
     gulp.watch(config.files.scripts.main, ['scripts:main']);
     gulp.watch(config.files.fonts, ['fonts']);
+    gulp.watch(config.files.cname, ['cname']);
 });
 
 gulp.task('server', ['build'], function() {
     $.connect.server(config.server);
+});
+
+gulp.task('clean', function () {
+    gulp.src(config.folders.dest)
+        .pipe($.clean());
 });
 
 gulp.task('dev', ['watch', 'server']);
