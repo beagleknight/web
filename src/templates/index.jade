@@ -1,0 +1,120 @@
+extend layouts/main
+block nav
+  nav#nav
+    ul
+      li
+        a.active(href="#about") About me
+      li
+        a(href="#career") Career
+      li
+        a(href="#skills") Skills
+      li
+        a(href="#portfolio") Portfolio
+block content
+  section#about
+    .container
+      header.major
+        h2 Hi!
+        p 
+          | Just an incredibly simple responsive site
+          br
+          | template freebie by <a href="http://html5up.net">HTML5 UP</a>    
+      p Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.
+  section#career
+    .container
+      h3 Career
+      p Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.
+      .features.career
+        article
+          a.image(href="#")
+            img(src="images/adverway-logo.png" alt="")
+          .inner
+            h4 Adverway
+            h5 Founder and CTO
+            h6 Nov 2012 - Nov 2015
+            p We wanted to create our own project so with our knowledge of web development and Facebook applications plus our restlessness in game development we founded a second company called Adverway. It was a good opportunity to mix web and games so I created my own HTML5 engine called Ethon.
+            p Adverway was a platform for brands where they could create their own games for Facebook, web and mobile. We had a catalogue of game mechanics and our customer could choose one and customize it. I created some casual games for it like Memory, Jewels or Sneaky Words.
+        article
+          a.image(href="#")
+            img(src="images/adverway-logo.png" alt="")
+          .inner
+            h4 Universitat Oberta de Catalunya
+            h5 Post-Graduate, Video game design and programming
+            h6 2011 - 2012
+            p While I was working on my company i++ I wanted to improve my knowledge about game development. I had not enough time to start a in-person course so I decided to study an online post-graduate at UOC. I learned a lot of things about 2D and 3D game development using C++ and a custom engine provided
+        article
+          a.image(href="#")
+            img(src="images/adverway-logo.png" alt="")
+          .inner
+            h4 i++
+            h5 Founder and CTO
+            h6 June 2009 - Nov 2014
+            p After finishing my University Degree I started a small company called imesmes (i plus plus in catalan) with some of my colleagues. We started doing small jobs like customizing wordpress templates and small static web pages.Then we created our first Facebook applications and small games on it. For a internal christmas campaign we build the game “Que venen els reis mags” in HTML5.
+        article
+          a.image(href="#")
+            img(src="images/adverway-logo.png" alt="")
+          .inner
+            h4 Universitat Autónoma de Barcelona
+            h5 Engineering, Computer Science
+            h6 2004 - 2009
+            p Since I was a little boy I wanted to make video games. After finishing the General Certificate of Education I started Computer Science at UAB because I thought it was the best starting point for me.
+            I studied a lot of things there: lots of math, electronics, networks, how a cpu works, etc. But in those 5 years my only contact with video games was a computer graphics subject where I collaborate in the HINT project.
+  section#skills
+    .container
+      h3 Skills
+      p Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
+      ul.feature-icons.skills
+        li.skill.unity3d
+          h4 Unity3D
+          ul.progress-bar
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li
+            li
+        li.skill.unity3d
+          h4 PhaserJS
+          ul.progress-bar
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li
+            li
+        li.skill.unity3d
+          h4 HTML5
+          ul.progress-bar
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li
+            li
+        li.skill.unity3d
+          h4 Blender
+          ul.progress-bar
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li
+            li
+        li.skill.unity3d
+          h4 Java
+          ul.progress-bar
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li.fill &nbsp;
+            li
+            li
+  section#portfolio
+    .container
+      h3 Portfolio
+      p Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
+      .portfolio.box.alt
+        .row.uniform(class="50%" ng-repeat="i in [1,2,3,4]")
+          a.game.6u(href="game.html")
+            .image.fit
+              img(src="images/games/hint/cover.png" alt="")
+              .title HINT: Hint is not Tetris
+          a.game.6u(href="game.html")
+            .image.fit
+              img(src="images/games/hint/cover.png" alt="")
+              .title HINT: Hint is not Tetris

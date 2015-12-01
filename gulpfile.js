@@ -6,6 +6,7 @@ var gulp   = require('gulp'),
 gulp.task('templates', function () {
     gulp.src(config.files.templates)
         .pipe($.plumber())
+        .pipe($.jade())
         .pipe(gulp.dest(config.folders.dest))
         .pipe($.connect.reload());
 });

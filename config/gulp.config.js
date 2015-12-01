@@ -9,7 +9,7 @@ module.exports = {
         modules: modulesFolder
     },
     files: {
-        templates: `${sourceFolder}/templates/**/*.html`,
+        templates: `${sourceFolder}/templates/*.jade`,
         styles: {
             libs: [
                 `${sourceFolder}/styles/font-awesome.min.css`
