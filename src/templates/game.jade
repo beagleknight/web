@@ -12,21 +12,22 @@ block nav
         a.active(href="/#portfolio") Portfolio
 block content
   section#about
-    .container
+    .container(ng-controller="GameController")
       header.major
-        h2 HINT: Hint is not Tetris
-        h4 Technology: C++, OpenGL
-        h4 Genres: puzzle
-      p Created while I was studying computer science. It was build from scratch using C++ and OpenGL. You are a monster called Aka-kun and you need to collect a star on each level. It’s a puzzle game where you can push and rotate tetrominos on a 3D environment. We included a fancy level editor to create custom levels and a basic 2-player cooperative mode.
-      ul.actions
+        h2 {{ game.title }}
+        h4 Technology: {{ game.technology }}
+        h4 Genres: {{ game.genres }}
+      p {{ game.description }}
+      ul.actions(ng-if="game.playable")
         li
           a.button.special(href="#") Play now
-      h5 Screenshots
-      .box.alt
-        .row.uniform(class="50%" ng-repeat="i in [1,2,3]")
-          .4u(ng-repeat="i in [1,2,3]")
-            span.image.fit
-              img(src="images/games/hint/cover.png")
+      .screenshots(ng-if="game.screenshots")
+        h5 Screenshots
+        .box.alt
+          .row.uniform(class="50%" ng-repeat="group in game.screenshots track by $index")
+            .4u(ng-repeat="screenshot in group track by $index")
+              span.image.fit
+                img(ng-src="images/games/{{ game.name }}/{{ screenshot.url }}")
       ul.actions
         li
           a.button.alt(href="/#portfolio") View portfolio

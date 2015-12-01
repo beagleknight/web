@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "gulp clean && gulp dev",
-    "deploy": "NODE_ENV=production gulp clean && gulp build && surge public"
+    "deploy": "gulp clean && NODE_ENV=production gulp build && surge public"
   },
   "devDependencies": {
     "angular": "^1.4.7",

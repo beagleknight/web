@@ -103,17 +103,13 @@ block content
             li.fill &nbsp;
             li
             li
-  section#portfolio
+  section#portfolio(ng-controller="PortfolioController")
     .container
       h3 Portfolio
       p Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
       .portfolio.box.alt
-        .row.uniform(class="50%" ng-repeat="i in [1,2,3,4]")
-          a.game.6u(href="game.html")
+        .row.uniform(class="50%" ng-repeat="group in games track by $index")
+          a.game.6u(href="game.html#{{ game.name }}" ng-repeat="game in group track by $index")
             .image.fit
-              img(src="images/games/hint/cover.png" alt="")
-              .title HINT: Hint is not Tetris
-          a.game.6u(href="game.html")
-            .image.fit
-              img(src="images/games/hint/cover.png" alt="")
-              .title HINT: Hint is not Tetris
+              img(ng-src="images/games/{{ game.name }}/cover.png" alt="")
+              .title {{ game.title }}
