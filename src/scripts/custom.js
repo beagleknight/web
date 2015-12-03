@@ -1,17 +1,6 @@
 (function () {
     "use strict";
 
-    var app = angular.module('beagleknightApp', []);
-
-    app.config( ['$provide', function ($provide){
-        $provide.decorator('$browser', ['$delegate', function ($delegate) {
-            $delegate.onUrlChange = function () {};
-            $delegate.url = function () { return ""; };
-            return $delegate;
-        }]);
-    }]);
-
-
     function groupBy(input, n) {
         var result = [], i, j;
 
@@ -25,6 +14,25 @@
 
         return result;
     }
+
+    var app = angular.module('beagleknightApp', []);
+
+    app.config( ['$provide', function ($provide){
+        $provide.decorator('$browser', ['$delegate', function ($delegate) {
+            $delegate.onUrlChange = function () {};
+            $delegate.url = function () { return ""; };
+            return $delegate;
+        }]);
+    }]);
+
+    app.controller("PortfolioController", ['$scope', 'Game', function ($scope, Game) {
+        $scope.games = groupBy(Game.all(), 2);
+    }]);
+
+    app.controller("GameController", ['$scope', 'Game', function ($scope, Game) {
+        $scope.game = Game.findByPath();
+        $scope.game.screenshots = groupBy($scope.game.screenshots, 3);
+    }]);
 
     app.factory("Game", ['$window', function ($window) {
         var games = [
@@ -69,12 +77,12 @@
         };
     }]);
 
-    app.controller("PortfolioController", ['$scope', 'Game', function ($scope, Game) {
-        $scope.games = groupBy(Game.all(), 2);
-    }]);
-
-    app.controller("GameController", ['$scope', 'Game', function ($scope, Game) {
-        $scope.game = Game.findByPath();
-        $scope.game.screenshots = groupBy($scope.game.screenshots, 3);
-    }]);
+    $(function () {
+        $('.screenshots a').magnificPopup({
+            type: "image",
+            gallery: {
+                enabled: true
+            }
+        });
+    });
 }());

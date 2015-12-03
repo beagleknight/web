@@ -13,7 +13,8 @@ module.exports = {
         templates: `${sourceFolder}/templates/*.jade`,
         styles: {
             libs: [
-                `${sourceFolder}/styles/font-awesome.min.css`
+                `${sourceFolder}/styles/font-awesome.min.css`,
+                `${modulesFolder}/magnific-popup/dist/magnific-popup.css`
             ],
             main: [
                 `${sourceFolder}/styles/libs/**/*.scss`,
@@ -30,6 +31,7 @@ module.exports = {
                 `${modulesFolder}/angular/angular.min.js`,
                 `${modulesFolder}/angular-ui-router/release/angular-ui-router.min.js`,
                 `${sourceFolder}/scripts/skel.min.js`,
+                `${modulesFolder}/magnific-popup/dist/jquery.magnific-popup.min.js`,
                 `${sourceFolder}/scripts/util.js`
             ],
             main: [

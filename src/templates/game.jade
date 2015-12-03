@@ -25,8 +25,8 @@ block content
         h5 Screenshots
         .box.alt
           .row.uniform(class="50%" ng-repeat="group in game.screenshots track by $index")
-            .4u(ng-repeat="screenshot in group track by $index")
-              span.image.fit
+            .4u(ng-repeat="screenshot in group track by $index" ng-if="screenshot.url")
+              a.image.fit(ng-href="images/games/{{ game.name }}/{{ screenshot.url }}")
                 img(ng-src="images/games/{{ game.name }}/{{ screenshot.url }}")
       ul.actions
         li
