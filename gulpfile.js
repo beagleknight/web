@@ -22,7 +22,7 @@ gulp.task('styles:main', function () {
     gulp.src(config.styles.mainFile)
         .pipe($.plumber())
         .pipe($.sass())
-        .pipe($.if(env === 'production', $.minifyCss()))
+        .pipe($.if(env === 'production', $.minifyCss({ processImport: false })))
         .pipe(gulp.dest(config.styles.destFolder))
         .pipe($.connect.reload());
 });
