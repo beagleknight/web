@@ -36,6 +36,7 @@
                 genres: "puzzle",
                 playable: false,
                 screenshots: [
+                    { url: 'cover.png' },
                     { url: 'cover.png' }
                 ]
             },

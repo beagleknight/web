@@ -12,7 +12,7 @@ block nav
         a.active(href="/#portfolio") Portfolio
 block content
   section#about
-    .container(ng-controller="GameController")
+    .container(ng-controller="GameController", ng-cloak)
       header.major
         h2 {{ game.title }}
         h4 Technology: {{ game.technology }}
