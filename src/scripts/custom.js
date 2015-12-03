@@ -45,7 +45,12 @@
                 playable: false,
                 screenshots: [
                     { url: 'cover.png' },
-                    { url: 'cover.png' }
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' },
+                    { url: '05.png' },
+                    { url: '06.png' }
                 ]
             },
             {
