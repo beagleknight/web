@@ -60,8 +60,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "action",
                 playable: true,
+                demoUrl: "http://imesmes-mags.herokuapp.com/",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -71,8 +76,12 @@
                 technology: "HTML5, custom game engine",
                 genres: "shooter",
                 playable: true,
+                demoUrl: "http://imesmes-fag.herokuapp.com/",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -83,7 +92,9 @@
                 genres: "strategy",
                 playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' }
                 ]
             },
             {
@@ -92,9 +103,13 @@
                 description: "In our second game jam we learnt the lesson and tried Java instead of C++. We build a mini game engine based on libgdx called Frisky. In Mothly’s world you controlled a fluor agent in order to clean some mouth’s bacteries. It was a nice side scrolling shooter mixed with some asteroids mechanics.",
                 technology: "Java, libgdx",
                 genres: "shooter",
-                playable: true,
+                playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -104,8 +119,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "puzzle, memory",
                 playable: true,
+                demoUrl: "https://clientgameapp.com/static/1054",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -116,7 +136,10 @@
                 genres: "strategy, stealth",
                 playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -126,8 +149,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "shooter",
                 playable: true,
+                demoUrl: "https://clientgameapp.com/static/1056",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -138,7 +166,10 @@
                 genres: "puzzle",
                 playable: true,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -149,7 +180,11 @@
                 genres: "platforms",
                 playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -160,7 +195,10 @@
                 genres: "runner, memory",
                 playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {

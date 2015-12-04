@@ -20,7 +20,7 @@ block content
       p {{ game.description }}
       ul.actions(ng-if="game.playable")
         li
-          a.button.special(href="#") Play now
+          a.button.special(ng-href="{{ game.demoUrl }}", target="_blank") Play now
       .screenshots(ng-if="game.screenshots")
         h5 Screenshots
         .box.alt
