@@ -208,8 +208,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "puzzle, match-3",
                 playable: true,
+                demoUrl: "https://clientgameapp.com/static/1058",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -219,8 +224,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "puzzle, action",
                 playable: true,
+                demoUrl: "https://clientgameapp.com/static/1511/",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -231,7 +241,11 @@
                 genres: "platforms, sandbox",
                 playable: false,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -241,8 +255,12 @@
                 technology: "HTML5, PhaserJS",
                 genres: "platforms, lag simulator",
                 playable: true,
+                demoUrl: "http://lagman.surge.sh/",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -252,8 +270,13 @@
                 technology: "HTML5, custom game engine",
                 genres: "puzzle",
                 playable: true,
+                demoUrl: "https://clientgameapp.com/static/1503/",
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -263,30 +286,13 @@
                 technology: "HTML5, PhaserJS",
                 genres: "stealth",
                 playable: true,
+                demoUrl: "https://dl.dropboxusercontent.com/u/2427705/ld33/index.html",
                 screenshots: [
-                    { url: 'cover.png' }
-                ]
-            },
-            {
-                name: "mind-the-gap",
-                title: "Mind the gap",
-                description: "You are a ninja who only knows two techniques: the tiger’s jump and the armadillo’s rolling. In this game you need to remember the obstacles and traps during a quick swipe of the camera. Then you enter the ninja’s commands and he perform them automatically.",
-                technology: "HTML5, PhaserJS",
-                genres: "runner, memory",
-                playable: true,
-                screenshots: [
-                    { url: 'cover.png' }
-                ]
-            },
-            {
-                name: "well-of-eternity",
-                title: "Well of eternity",
-                description: "I started a small project with a few friends called “The Mad Knights”. We aim for creating some games and learn something. Currently we are working on this game, a kind of vertical runner with small roguelike flavours like procedural generation of the map.",
-                technology: "HTML5, PhaserJS",
-                genres: "runner, roguelike",
-                playable: true,
-                screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' },
+                    { url: '04.png' }
                 ]
             },
             {
@@ -317,6 +323,28 @@
                 description: "As I was working with Unity3D I thought where the programming has gone? In this game I learnt how to use scripts to enhance the possibilities with this awesome game engine. I created my own simple scripts to manipulate the enemy's behavior.",
                 technology: "Unity3D",
                 genres: "shooter",
+                playable: true,
+                screenshots: [
+                    { url: 'cover.png' }
+                ]
+            },
+            {
+                name: "mind-the-gap",
+                title: "Mind the gap",
+                description: "You are a ninja who only knows two techniques: the tiger’s jump and the armadillo’s rolling. In this game you need to remember the obstacles and traps during a quick swipe of the camera. Then you enter the ninja’s commands and he perform them automatically.",
+                technology: "HTML5, PhaserJS",
+                genres: "runner, memory",
+                playable: true,
+                screenshots: [
+                    { url: 'cover.png' }
+                ]
+            },
+            {
+                name: "well-of-eternity",
+                title: "Well of eternity",
+                description: "I started a small project with a few friends called “The Mad Knights”. We aim for creating some games and learn something. Currently we are working on this game, a kind of vertical runner with small roguelike flavours like procedural generation of the map.",
+                technology: "HTML5, PhaserJS",
+                genres: "runner, roguelike",
                 playable: true,
                 screenshots: [
                     { url: 'cover.png' }
