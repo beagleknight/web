@@ -31,9 +31,26 @@ footer {
 }
 
 ul.feature-icons.skills {
+  li.skill {
+    padding-left: 4em;
+    background-size: 15%;
+    background-position: top left;
+    background-repeat: no-repeat;
+  }
   li.skill.unity3d {
-    background: url(/images/unity-icon.png) top left no-repeat;
-    background-size: 15%
+    background-image: url(/images/unity-icon.png);
+  }
+  li.skill.phaserjs {
+    background-image: url(/images/phaserjs-icon.png);
+  }
+  li.skill.angularjs {
+    background-image: url(/images/angularjs-icon.png);
+  }
+  li.skill.ror {
+    background-image: url(/images/ror-icon.png);
+  }
+  li.skill.blender {
+    background-image: url(/images/blender-icon.png);
   }
 }
 
@@ -45,7 +62,7 @@ ul.progress-bar {
     margin: 0;
     padding: 0;
     width: 15%;
-    border: 1px solid _palette(fg-bold);
+    border: 2px solid _palette(bg);
     height: 12px;
     &.fill {
       background: _palette(accent1, fg-dark);
@@ -63,5 +80,12 @@ ul.progress-bar {
         text-align: center;
       }
     }
+  }
+}
+
+section#skills {
+  h4 {
+    border-bottom: 1px solid _palette(fg-bold);
+    margin-bottom: 25px;
   }
 }
