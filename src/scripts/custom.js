@@ -306,6 +306,7 @@
                 technology: "Unity3D",
                 genres: "simulator",
                 playable: true,
+                demoUrl: "https://dl.dropboxusercontent.com/u/2427705/SolarSystem/index.html",
                 screenshots: [
                     { url: 'cover.png' },
                     { url: '01.png' },
@@ -320,6 +321,7 @@
                 technology: "Unity3D",
                 genres: "action, platforms",
                 playable: true,
+                demoUrl: "https://dl.dropboxusercontent.com/u/2427705/RollerMadness/index.html",
                 screenshots: [
                     { url: 'cover.png' },
                     { url: '01.png' },
@@ -334,6 +336,7 @@
                 technology: "Unity3D",
                 genres: "shooter",
                 playable: true,
+                demoUrl: "https://dl.dropboxusercontent.com/u/2427705/Box%20Shooter/index.html",
                 screenshots: [
                     { url: 'cover.png' },
                     { url: '01.png' },
