@@ -15,6 +15,10 @@
         return result;
     }
 
+    function noWip (game) {
+        return !game.wip;
+    }
+
     var app = angular.module('beagleknightApp', []);
 
     app.config( ['$provide', function ($provide){
@@ -26,7 +30,7 @@
     }]);
 
     app.controller("PortfolioController", ['$scope', 'Game', function ($scope, Game) {
-        $scope.games = groupBy(Game.all().reverse(), 2);
+        $scope.games = groupBy(Game.all().filter(noWip).reverse(), 2);
     }]);
 
     app.controller("GameController", ['$scope', 'Game', function ($scope, Game) {
@@ -303,7 +307,10 @@
                 genres: "simulator",
                 playable: true,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -314,7 +321,10 @@
                 genres: "action, platforms",
                 playable: true,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
@@ -325,10 +335,14 @@
                 genres: "shooter",
                 playable: true,
                 screenshots: [
-                    { url: 'cover.png' }
+                    { url: 'cover.png' },
+                    { url: '01.png' },
+                    { url: '02.png' },
+                    { url: '03.png' }
                 ]
             },
             {
+                wip: true,
                 name: "mind-the-gap",
                 title: "Mind the gap",
                 description: "You are a ninja who only knows two techniques: the tiger’s jump and the armadillo’s rolling. In this game you need to remember the obstacles and traps during a quick swipe of the camera. Then you enter the ninja’s commands and he perform them automatically.",
@@ -340,6 +354,7 @@
                 ]
             },
             {
+                wip: true,
                 name: "well-of-eternity",
                 title: "Well of eternity",
                 description: "I started a small project with a few friends called “The Mad Knights”. We aim for creating some games and learn something. Currently we are working on this game, a kind of vertical runner with small roguelike flavours like procedural generation of the map.",
@@ -351,6 +366,7 @@
                 ]
             },
             {
+                wip: true,
                 name: "hint-hd-edition",
                 title: "Hint HD Edition",
                 description: "Feeling nostalgic about the first game which I collaborated on the university I wanted to create some kind of tribute for it. I decided to keep learning about Unity creating a new version of HINT.",

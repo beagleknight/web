@@ -106,7 +106,8 @@ block content
   section#portfolio(ng-controller="PortfolioController")
     .container
       h3 Portfolio
-      p Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.
+      p These are some projects developed in smaller teams. A few of them have been created in less than 72h for a <a href="http://ludumdare.com" target="_blank">LudumDare</a> competition.
+      p I like to test different programming languages and engines for my projects. I'm in love with <a href="http://www.phaser.io/" target="_blank">PhaserJS</a> and <a href="http://unity3d.com/" target="_blank">Unity3D</a>.
       .portfolio.box.alt
         .row.uniform(class="50%" ng-repeat="group in games track by $index")
           a.game.6u(href="game.html#{{ game.name }}" ng-repeat="game in group track by $index")
