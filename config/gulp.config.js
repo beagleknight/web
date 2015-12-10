@@ -40,7 +40,8 @@ module.exports = {
             ]
         },
         fonts: `${sourceFolder}/fonts/**.*`,
-        cname: `${configFolder}/CNAME`
+        cname: `${configFolder}/CNAME`,
+        favicon: `${configFolder}/favicon.ico`
     },
     styles: {
         mainFile: `${sourceFolder}/styles/index.scss`,

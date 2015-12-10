@@ -65,7 +65,14 @@ gulp.task('cname', function () {
         .pipe($.connect.reload());
 });
 
-gulp.task('build', ['templates', 'styles:libs', 'styles:main', 'images', 'scripts:libs', 'scripts:main', 'fonts', 'cname']);
+gulp.task('favicon', function () {
+    gulp.src(config.files.favicon)
+        .pipe($.plumber())
+        .pipe(gulp.dest(config.folders.dest))
+        .pipe($.connect.reload());
+});
+
+gulp.task('build', ['templates', 'styles:libs', 'styles:main', 'images', 'scripts:libs', 'scripts:main', 'fonts', 'cname', 'favicon']);
 
 gulp.task('watch', ['build'], function () {
     gulp.watch(config.files.templates, ['templates']);
