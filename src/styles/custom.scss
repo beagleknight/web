@@ -7,7 +7,15 @@
 }
 
 a {
-  color: _palette(accent1, bg) !important;  
+  color: _palette(accent1, bg);
+}
+
+footer {
+  .icons {
+    a {
+      color: _palette(fg);
+    }
+  }
 }
 
 .features.career {
